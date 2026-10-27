@@ -1,0 +1,93 @@
+{
+  "seed": 42,
+  "primary_metric": "NDCG@10",
+  "secondary_metric": "Recall@10",
+  "relevance": "rating >= 4",
+  "K": 10,
+  "refit_train_validation": false,
+  "validation_grid": {
+    "ItemKNN": {
+      "neighbors": [
+        40,
+        100
+      ],
+      "shrinkage": [
+        0,
+        20
+      ]
+    },
+    "ExplicitALS": {
+      "rank": [
+        8,
+        16
+      ],
+      "regularization": [
+        1.0,
+        10.0
+      ],
+      "iterations": [
+        8
+      ],
+      "seed": [
+        42
+      ]
+    },
+    "EASE": {
+      "regularization": [
+        10.0,
+        100.0,
+        1000.0
+      ]
+    },
+    "FM": {
+      "rank": [
+        8,
+        16
+      ],
+      "regularization": [
+        0.0001,
+        0.001
+      ],
+      "learning_rate": [
+        0.01
+      ],
+      "epochs": [
+        8
+      ],
+      "seed": [
+        42
+      ]
+    }
+  },
+  "custom_target_grid": [
+    {
+      "alpha": 0.25,
+      "tau_days": 180
+    },
+    {
+      "alpha": 0.5,
+      "tau_days": 365
+    },
+    {
+      "alpha": 1.0,
+      "tau_days": 365
+    }
+  ],
+  "custom_solver": "rank/regularization/iterations from best validation ExplicitALS",
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.2.6",
+    "pandas": "2.2.3",
+    "scipy": "1.15.3",
+    "torch": "2.7.1+cpu"
+  },
+  "blas_threads": "1",
+  "train_sha256": "2c15e544a98c81a88c1cdf8d2d5cd8c28ddbee151be8dbfcb6da5260ea658db9",
+  "validation_sha256": "e7dd8edde43e3070d95692d5b1ed8d79daef2fe9918c85ff99e8bcba15885e58",
+  "metadata_sha256": "472b798e9df0c9484eb8406f1f4e7313a8eb1dbe050963069271da972f0a6ad0",
+  "validation_users": 5721,
+  "validation_cohort_sha256": "760b06cd10f288bcac3e5214a227e0a00601b9bcea2306ec368c2637c07541d2",
+  "test_users": 4546,
+  "test_sha256": "3d956259bf8a0d05ea81144e27785305efc55ce9ea70e4960b2155f529c5c7a4",
+  "test_cohort_sha256": "801700bc5f1368628c7fd24f3132a3c640cd709d7062d1fcd936ed4996f21e3b"
+}

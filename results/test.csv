@@ -1,0 +1,8 @@
+model,NDCG@10,Recall@10,users,params
+ItemKNN,0.023470108189860815,0.038803850105121655,4546,"{""neighbors"": 100, ""shrinkage"": 20}"
+ExplicitALS,0.013637939127324,0.024536844843447522,4546,"{""iterations"": 8, ""rank"": 16, ""regularization"": 10.0, ""seed"": 42}"
+EASE,0.02591816021785997,0.04038503420487412,4546,"{""regularization"": 100.0}"
+FM,0.0034182242986252115,0.006608897408501456,4546,"{""epochs"": 8, ""learning_rate"": 0.01, ""rank"": 16, ""regularization"": 0.0001, ""seed"": 42}"
+CustomALS,0.019770430185742684,0.03490561649259494,4546,"{""alpha"": 0.25, ""iterations"": 8, ""rank"": 16, ""regularization"": 10.0, ""seed"": 42, ""tau_days"": 180}"
+FM_ID_only_ablation,0.0019682128062463227,0.003254038086858148,4546,"{""epochs"": 8, ""include_metadata"": false, ""learning_rate"": 0.01, ""rank"": 16, ""regularization"": 0.0001, ""seed"": 42}"
+Popularity_baseline,0.009892236731740488,0.01896796222234059,4546,{}

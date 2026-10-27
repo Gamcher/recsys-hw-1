@@ -1,0 +1,11 @@
+{
+  "run_id": "fcde9fc831c847449e59b1f91988ac21",
+  "state": "completed",
+  "artifact_sha256": {
+    "protocol.json": "e16cffb6092392b766714a972711f4e09566293dae7040e9ec31c93e684edc9a",
+    "selected.json": "f26f53852da4349f3debab1d2dbe49a056b48b820906a9df7e66c6bd08bce11f",
+    "validation.csv": "5ae8230b9c3c22c6d4a0fe328d65a8d7b0d09bdd7898f4bbbe390a318a18f30c",
+    "test.csv": "087ce07d947d0d593a0c2689bb286e4f88b8aaa1c6f65b5c16edfa22fe8e890a",
+    "recommendations.json": "ab10beece54494357403ad6ac805bd922e9cc0b9390462a3235b8f24f1f90498"
+  }
+}
